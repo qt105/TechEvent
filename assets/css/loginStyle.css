@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.left-column {
+  width: 50%;
+  padding: 128px;
+}
+
+.right-column {
+  width: 50%;
+  padding: 16px;
+  background-color: #F37121;
+}
+
+
+.texte-login-top h3, .texte-login-top h1 {
+  margin-bottom: 12px;
+}
+
+
+.option-connexion {
+  display: flex;
+  width: 180px;
+  padding: 8px 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.option-connexion img {
+  height: 25px;
+  margin-right: 10px;
+}
+
+#olympics {
+  margin: 20px auto 0 auto;
+}
+
+.loginGoogleFB {
+  display: flex;
+  justify-content: center;
+}
+
+#continueSeparator {
+  display: inline-block;
+  justify-content: center;
+}
+
+.separator {
+  display: inline-block;
+  height: 1px;
+  width: 40px;
+  background-color: black;
+}
+
+#continuer {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.submitBtn {
+  display: block;
+  width: 220px;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #F37121;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px auto;
+  transition: background-color 500ms;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: #A03E07;
+}
+
+
+
+#creationFullText {
+  display: inline-block;
+  justify-content: center;
+  margin: 20px;
+}
+
+#creationFullText p {
+  display: inline-block;
+}
+
+#creationLink {
+  color: #F37121;
+  text-decoration: none;
+}
+#creationLink:hover {
+  color: #F37121;
+  text-decoration: underline;
+}
+
+
+.form-container {
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder {
+  color: grey;
+}

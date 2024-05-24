@@ -3,7 +3,7 @@ define('DB_HOST', 'localhost');
 define('DB_PORT', '3306');
 define('DB_NAME', 'TechEvent');
 define('DB_USER', 'root');
-define('DB_PASS', 'testmdp');
+define('DB_PASS', 'password');
 
 try {
     $pdo = new PDO(

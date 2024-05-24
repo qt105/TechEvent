@@ -13,7 +13,7 @@
               <img src="assets/images/headerImages\Notification-Icon.png" alt="Notification Icon">
             </div>
             <div class="icon">
-              <a href="login.html" target="_blank">
+              <a href="login.php" target="_blank">
                 <img src="assets/images/headerImages/Profile-Icon.png" alt="Profile icon">
               </a>
             </div>
