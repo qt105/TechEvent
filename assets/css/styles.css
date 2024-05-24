@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #F37121;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin-bottom: 10px;
+}
+
+.text-content {
+    max-width: 50%;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #F37121;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.section img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.epreuves-moment {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.header-content h2 {
+    margin-bottom: 0;
+}
+
+.header-content .see-all {
+    font-weight: normal;
+    color: #F37121;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.case {
+    background-color: #fff;
+    border: 2px solid #F37121;
+    border-radius: 10px;
+    width: calc(33.333% - 40px);
+    max-width: 300px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.case img {
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #F37121;
+    margin-bottom: 10px;
+}
+
+.case p {
+    margin: 10px 0;
+}
+
+.case button {
+    background-color: #F37121;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.case button:hover {
+    background-color: #e65c00;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.view-all-quiz {
+    color: #F37121;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.view-all-quiz:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin: 64px;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+    font-size: 40px;
+    margin: 64px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+    font-size: 32px;
+    margin: 64px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h4 {
+    font-size: 24px;
+    margin-top: 32px;
+    margin: 64px;
+    font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+    color: #33beff;
+    margin: 64px;
+    font-size: 32px;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-family: 'Mulish', sans-serif;
+}
+
+.u_CTA {
+    color: #33beff;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.image-container {
+    display: flex;
+    margin: 64px;
+    justify-content: space-between;
+    margin: 64px;
+}
+
+.image-container img {
+    width: 640px;
+    height: 438px;
+    border-radius: 16px;
+}
+
+.description {
+    border-radius: 16px;
+    font-size: 20px;
+    background-color: #F79C64;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.titreDesciption {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.CTA-description {
+    margin-top: 64px;
+    color: #33beff;
+    text-align: right;
+    padding-right: 32px;
+}
+
+.placesRestantes {
+    padding-top: 32px;
+    color: black;
+    padding-left: 32px;
+}
+
+.inscription {
+    padding-top: 64px;
+    text-align: center;
+}
+
+.imagesSimilaires img {
+    width: 401px;
+    height: 266px;
+    border-radius: 16px;
+    margin: 32px;
+}
+
+.h3_circuit {
+    color: #33beff;
+}
+
+.parcourCourse img {
+    border-radius: 16px;
+    margin: 64px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+
+.h2_FAQ {
+    background-color: #F79C64;
+    border-radius: 16px;
+    padding: 16px 16px;
+    display: inline-block;
+}
+
+.questions_FAQ {
+    border-radius: 16px;
+    background-color: #d9d9d9;
+    font-size: 20px;
+    margin-left: 64px;
+    margin-right: 400px;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.imgJO img {
+    border-radius: 16px;
+    margin-left: 64px;
+    /* height: 661px; */
+    /* width: 581px; */
+    max-height: 400px;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
