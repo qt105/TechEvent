@@ -46,7 +46,13 @@ $event = getEventById($pdo, $eventId);
             <div class="description">
                 <div class="titreDesciption">
                     <h4>
-                        Paris tour 10 km !
+                    <?php
+                        if ($event) {
+                            echo $event->name;
+                        } else {
+                            echo "Error 404";
+                        }
+                    ?>
                     </h4>
                 
                 <p>
@@ -85,7 +91,7 @@ $event = getEventById($pdo, $eventId);
                 <div class="inscription">    
                     <h3>
                         <p>
-                            S'INSCRIRE À LA COURSE !
+                            s'inscrire à l'évènement
                         </p>
                     </h3>
                 </div>
@@ -116,7 +122,7 @@ $event = getEventById($pdo, $eventId);
         Plus d'information sur le circuit de la course
     </h2>
     <h3 class="h3_circuit">
-        Voici le circuit complet qui sera emprunté lors de ces 10 km dans le centre de Paris
+        Voici le circuit complet qui sera emprunté lors de cette activité
     </h3>
     <div class="parcourCourse">
         <img src="assets\images\eventImages\course 10k V2.png" alt="Parcour course">
