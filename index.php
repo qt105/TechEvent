@@ -41,7 +41,7 @@
             <div class="case">
                 <img src="assets\images\indexImages\course.png" alt="Course">
                 <p>Course</p>
-                <button>Participer</button>
+                <a href="event.php?id=1"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\football.png" alt="Football">

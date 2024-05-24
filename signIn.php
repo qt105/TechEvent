@@ -45,12 +45,13 @@
               <option value="de">Allemand</option>
             </select>
 
-            <button type="submit" class="submitBtn">S'inscrire</button>
+            <a href="./login.php"><button type="submit" class="submitBtn">S'inscrire</button></a>
           </form>
       </div>
         
       <div id="loginFullText">
-        <p>Vous avez déjà un compte ? <a href="login.html" id="loginLink">Se connecter</a> </p>
+        <p>Vous avez déjà un compte ? 
+        <a href="login.php" id="loginLink">Se connecter</a> </p>
       </div>
 
     </div>

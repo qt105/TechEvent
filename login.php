@@ -48,7 +48,7 @@
               <div class="form-group">
                   <input type="password" id="password" name="password" placeholder="Mot de passe" required>
               </div>
-              <button type="submit" class="submitBtn">Se connecter</button>
+              <a href="index.php"><button type="submit" class="submitBtn">Se connecter</button></a>
           </form>
       </div>
         
