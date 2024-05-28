@@ -17,4 +17,5 @@ créé par:
 - https://github.com/mathysgirardot
 - https://github.com/Choninho4
 - https://github.com/loannduv
+- https://github.com/qt105
 - Ilan FOLSCHVEILLER
