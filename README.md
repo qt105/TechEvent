@@ -7,7 +7,7 @@ convention de nommage des variables: camelCase
 base de donnée mysql requise pour le bon fonctionnement du site web, trouvable dans le repository sous le nom de db_TechEvent.sql
 Lancer le projet sur un serveur php et relier la base de données via le ficher config/database.php
 
-Futures implémentations prévues:
+Roadmap et futures implémentations prévues:
 - Gestion des utilisateurs et lien entre les utilisateurs et évènements via une base de données users et users_events
 - Correctifs dans le html/css
 - Ajout de la page de vue d'ensemble des activités disponibles
@@ -16,4 +16,5 @@ Futures implémentations prévues:
 créé par: 
 - https://github.com/mathysgirardot
 - https://github.com/Choninho4
-- 
+- https://github.com/loannduv
+- Ilan FOLSCHVEILLER
