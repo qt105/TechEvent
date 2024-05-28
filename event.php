@@ -4,6 +4,9 @@ include 'templates/header.php';
 
 $eventId = isset($_GET['id']) ? $_GET['id'] : die('ID de l\'activité non spécifié.');
 $event = getEventById($pdo, $eventId);
+$eventP1 = getEventById($pdo, $eventId+1);
+$eventP2 = getEventById($pdo, $eventId+2);
+$eventP3 = getEventById($pdo, $eventId+3);
 ?>
 
 
@@ -13,57 +16,25 @@ $event = getEventById($pdo, $eventId);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/eventStyle.css">
-    <title><?php
-    if ($event) {
-        echo $event->name;
-    } else {
-        echo "Error 404";
-    }
-    ?></title>
+    <title><?php echo $event->name ?></title>
 </head>
 <body>
     <h5>
-        Accueil > Les épreuves sportives > <?php
-        if ($event) {
-            echo $event->name;
-        } else {
-            echo "Error 404";
-        }
-        ?>
+        Accueil > Les épreuves sportives > <?php echo $event->name ?>
     </h5>
     <h1>
-        <?php
-        if ($event) {
-            echo $event->name;
-        } else {
-            echo "Error 404";
-        }
-        ?>
+        <?php echo $event->name ?>
     </h1>
         <div class="image-container">
-            <img src="assets\images\eventImages\progresser_en_cap.jpg.webp" alt="Coureur">
+            <img src="assets\images\eventImages\imgById\<?php echo $event->image?>" alt="image de">
             
             <div class="description">
                 <div class="titreDesciption">
                     <h4>
-                    <?php
-                        if ($event) {
-                            echo $event->name;
-                        } else {
-                            echo "Error 404";
-                        }
-                    ?>
+                    <?php echo $event->name ?>
                     </h4>
-                
-                <p>
-                    <?php
-                    if ($event) {
-                        echo $event->description;
-                    } else {
-                        echo "Error 404";
-                    }
-                    ?>
-                </p>
+                    <p><?php echo $event->description ?></p>
+                    <p>L'activité durera <?php echo $event->duration?> heures</p>
                 </div>
                 <div class="CTA-description">
                     <u>
@@ -91,7 +62,7 @@ $event = getEventById($pdo, $eventId);
                 <div class="inscription">    
                     <h3>
                         <p>
-                            s'inscrire à l'évènement
+                            <a href="">s'inscrire à l'évènement</a>
                         </p>
                     </h3>
                 </div>
@@ -101,31 +72,55 @@ $event = getEventById($pdo, $eventId);
         D'autres épreuves à venir
     </h2>
         <div class="imagesSimilaires">
-            <img src="assets\images\eventImages\cecifoot-ricardinho-hd-1200x800.jpg" alt="Joueur de foot aveugles">
-            <img src="assets\images\eventImages\istockphoto-604370074-612x612-1.jpg" alt="Femme qui cour">
-            <img src="assets\images\eventImages\Basket-3x3-1-o8adveg5quqb12uo5hoxo3jpgfvfl83y9bwr3bmijo.jpg.webp" alt="Basketball">
+            <img src="assets\images\eventImages\imgById\<?php if($eventP1){
+                    echo $eventP1->image;
+                }else{
+                    echo "missing.png";
+                } ?>" alt="event+1 image">
+            <img src="assets\images\eventImages\imgById\<?php if($eventP2){
+                    echo $eventP2->image;
+                }else{
+                    echo "missing.png";
+                } ?>" alt="event+2 image">
+            <img src="assets\images\eventImages\imgById\<?php if($eventP3){
+                    echo $eventP3->image;
+                }else{
+                    echo "missing.png";
+                } ?>" alt="event+3 image">
             <div class="container ">
-                <p>Activité découverte cécifot</p>
+                <p><?php if($eventP1){
+                    echo $eventP1->name;
+                }else{
+                    echo "Pas encore d'évènement";
+                } ?></p>
                 
-                <p>Marathon Paris tour</p>
+                <p><?php if($eventP2){
+                    echo $eventP2->name;
+                }else{
+                    echo "Pas encore d'évènement";
+                }?></p>
                 
-                <p>Tournois de basketball outdoor</p>
+                <p><?php if($eventP3){
+                    echo $eventP3->name;
+                }else{
+                    echo "Pas encore d'évènement";
+                }?></p>
                 
             </div>
             <div class="container">
-                <u class="u_CTA"><p>En savoir plus</p></u>
-                <u class="u_CTA"><p>En savoir plus</p></u>
-                <u class="u_CTA"><p>En savoir plus</p></u>
+                <u class="u_CTA"><a href="event.php?id=<?php echo $eventId+1 ?>"><p>En savoir plus</p></a></u>
+                <u class="u_CTA"><a href="event.php?id=<?php echo $eventId+2 ?>"><p>En savoir plus</p></a></u>
+                <u class="u_CTA"><a href="event.php?id=<?php echo $eventId+3 ?>"><p>En savoir plus</p></a></u>
             </div>
         </div>
     <h2>
-        Plus d'information sur le circuit de la course
+        Plus d'information sur le lieux de l'évènement
     </h2>
     <h3 class="h3_circuit">
-        Voici le circuit complet qui sera emprunté lors de cette activité
+        Voici l'emplacement de cette activité
     </h3>
     <div class="parcourCourse">
-        <img src="assets\images\eventImages\course 10k V2.png" alt="Parcour course">
+        <img src="assets\images\eventImages\locationImage\<?php echo $event->mapImage ?>" alt="Parcour activité">
     </div>
     <div>
         <h2 class="h2_FAQ">FOIRE AUX QUESTIONS (FAQ)</h2>

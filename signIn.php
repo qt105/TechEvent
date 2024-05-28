@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="assets/css/signInStyle.css">
 </head>
 <body>
+  <?php require_once 'config\database.php' ?>
   <div class="container">
     <div class="left-column">
       <div class ="texte-login-top">
@@ -45,10 +46,12 @@
               <option value="de">Allemand</option>
             </select>
 
-            <a href="./login.php"><button type="submit" class="submitBtn">S'inscrire</button></a>
+            <a href="login.php"><button type="submit" class="submitBtn">S'inscrire</button></a>
           </form>
       </div>
         
+      
+
       <div id="loginFullText">
         <p>Vous avez déjà un compte ? 
         <a href="login.php" id="loginLink">Se connecter</a> </p>
@@ -62,7 +65,5 @@
       </div>
     </div>
 </div>
-  
-
 </body>
 </html>

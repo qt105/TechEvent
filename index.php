@@ -6,8 +6,13 @@
     <title>JO 2024</title>
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<?php include 'templates/header.php'?>
+<?php 
+require_once 'app/functions.php';
+include 'templates/header.php'
+
+?>
 <body>
+    
     <div class="section jo-spectateurs">
         <div class="text-content">
             <h2>Les JO des spectateurs</h2>
@@ -26,37 +31,37 @@
             <div class="case">
                 <img src="assets\images\indexImages\handball.png" alt="Handball">
                 <p>Handball</p>
-                <button>Participer</button>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('handball'); ?>"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\basketball.png" alt="Basketball">
                 <p>Basketball</p>
-                <button>Participer</button>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('basketball'); ?>"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\skateboard.png" alt="Skateboard">
                 <p>Skateboard</p>
-                <button>Participer</button>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('skateboard'); ?>"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\course.png" alt="Course">
                 <p>Course</p>
-                <a href="event.php?id=1"><button>Participer</button></a>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('running'); ?>"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\football.png" alt="Football">
                 <p>Football</p>
-                <button>Participer</button>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('football'); ?>"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\natation.png" alt="Natation">
                 <p>Natation</p>
-                <button>Participer</button>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('swimming'); ?>"><button>Participer</button></a>
             </div>
             <div class="case">
                 <img src="assets\images\indexImages\sportsequestre.png" alt="Sports Équestres">
                 <p>Sports Équestres</p>
-                <button>Participer</button>
+                <a href="event.php?id=<?php echo getLastEventIdBySport('horse'); ?>"><button>Participer</button></a>
             </div>
         </div>
     </div>
@@ -108,7 +113,7 @@
         <div class="text-content">
             <h2>Le sport du moment</h2>
             <p>Sport collectif d’opposition pour déficients visuels, le cécifoot est une adaptation du football. Seuls le gardien de but est voyant, tous les autres joueurs sont non-voyants ou malvoyants. Un ballon avec des clochettes permet de localiser l’objet. Découvrez et participez à cette activité exceptionnelle lors des prochains événements.</p>
-            <a href="#" class="cta-button">Participer</a>
+            <a href="event.php?id=4" class="cta-button">Participer</a>
         </div>
     </div>
 
